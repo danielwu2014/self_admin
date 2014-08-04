@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns="http://www.w3.org/1999/xhtml"
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/login.css" />
+    <load href="__PUBLIC__/Js/jquery-1.9.1.js" />
+    <load href="__PUBLIC__/Js/jquery.validate.js" />
+    <import file="Js.base" />
+</head>
+<style type="text/css">
+  #signupForm label.error{color:red;margin-left:8px; background:url(js/unchecked.gif) no-repeat 2px 0 }
+  #signupForm label.right{margin-left:4px; padding-left:20px; background:url(js/checked.gif) no-repeat 2px 0}
+</style>
+<body class="loginWeb">
+    <div class="loginBox">
+        <div class="innerBox">
+            <div class="logo"> <img src="__PUBLIC__/Images/logo.png" /></div>
+            <form id="signupForm">
+                <div class="loginInfo">
+                    <ul>
+                        <li class="row1">用户名：</li>
+                        <li class="row2"><input class="input" name="admin_name" id="admin_name" size="30" type="text" /></li>
+                    </ul>
+                    <ul>
+                        <li class="row1">密&nbsp;&nbsp;&nbsp;码：</li>
+                        <li class="row2"><input class="input" name="admin_pwd" id="admin_pwd" size="30" type="password" /></li>
+                    </ul>
+                    <ul>
+                        <li class="row1">验证码：</li>
+                        <li class="row2">
+                            <input class="input" id="verify_code" name="verify_code" type="text" style="width:100px;" />
+                            <img id="verifyImg" src="{:U('Public/verify_code')}" title="看不清？单击此处刷新" onclick="fleshVerify();" style="cursor: pointer; vertical-align: middle;">
+                        </li>
+                    </ul>
+                </div>
+
+            <div class="clear"></div>
+            <div class="operation"><button class="btn submit">登录</button><button class="btn findPwd">找回密码</button></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+
+$(document).ready(function() {
+    $("#signupForm").validate({
+        submitHandler: function(form){
+            //form.submit(); //提交表单
+            $.ajax({
+                type : 'POST',
+                url  : "{:U('Public/check_login')}",
+                dataType : 'json',
+                data : {
+                    'admin_name' : $('#admin_name').val(),
+                    'admin_pwd' : $('#admin_pwd').val(),
+                    'verify_code' : $('#verify_code').val()
+                },
+                beforeSend:function(){
+
+                },
+                success:function(data){
+                    alert(data.message);
+                    if(data.status==1){
+                        location.href=data.rdr_url;
+                    }else{
+                        location.reload();
+                    }
+
+                }
+            })
+        },
+        rules: {
+            admin_name: "required",
+            admin_pwd: "required",
+            verify_code: {
+                required: true,
+            }
+        },   
+        messages: {
+            admin_name: "请输入姓名",
+            admin_pwd: "请输入密码",
+            verify_code:{
+	    	   required:"请输入验证码",
+	        }
+        },
+        errorPlacement: function(error, element) {   
+            error.appendTo(element.parent()); 
+            //error.insertAfter(element);
+        },
+        /*success: function(label) {  //与上面errorPlacement对应
+           //label.html(" ").addClass("right");
+        }*/
+
+    });
+});
+
+function fleshVerify(){
+    var time = new Date().getTime();
+    $("#verifyImg").attr('src',"{:U('Public/verify_code')}&type=gif&rand="+time);
+}
+</script>

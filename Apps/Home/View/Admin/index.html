@@ -1,0 +1,31 @@
+<include file="Public:main_top" />
+<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td height="40"><table width="100%" bgcolor="#464646" cellspacing="1" cellpadding="4" border="0">
+          <tbody>
+            <tr>
+              <td width="10%" bgcolor="#EEEEEE" align="center">用户ID</td>
+              <td width="15%" bgcolor="#EEEEEE" align="center">用户名</td>
+              <td width="15%" bgcolor="#EEEEEE" align="center">状态</td>
+              <td width="15%" bgcolor="#EEEEEE" align="center">昵称</td>
+              <td width="15%" bgcolor="#EEEEEE" align="center">邮箱</td>
+              <td width="15%" bgcolor="#EEEEEE" align="center">创建时间</td>
+              <td width="15%" bgcolor="#EEEEEE" align="center">操作</td>
+            </tr>
+            <foreach name="voList" item="vo">
+              <tr align="center">
+                <td bgcolor="#FFFFFF">{$vo.admin_id}</td>
+                <td bgcolor="#FFFFFF">{$vo.admin_name}</td>
+                <td bgcolor="#FFFFFF">{$vo.status}</td>
+                <td bgcolor="#FFFFFF">{$vo.nickname}</td>
+                <td bgcolor="#FFFFFF">{$vo.email}</td>
+                <td bgcolor="#FFFFFF">{$vo.create_time}</td>
+                <td bgcolor="#FFFFFF"></td>
+            </foreach>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+<include file="Public:main_bottom" />

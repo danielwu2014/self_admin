@@ -1,0 +1,20 @@
+<include file="Public:main_top" />
+<form action="{:U('Attribute/valueUpdate')}" method="POST">
+	<input type="hidden" name="value_id" value="{$values['value_id']}">
+	<table cellspacing="1" cellpadding="2" border="0" style="width:100%">
+	  <tr height='40'>
+	    <td width="10%">属性值:</td>
+	    <td><input type="text" name="value_name" value="{$values.value_name}" class="text"></td>
+	  </tr>
+	  <tr>
+	    <td>排序:</td>
+	    <td><input type="text" name="value_sort" value='{$values.value_sort}' class="text"></td>
+	  </tr>
+	  <tr>
+	    <td></td>
+	    <td><input type="submit" class="button" value="保存">
+	      <input type="button" class="button" value="返回" onclick="window.history.go(-1);"/></td>
+	  </tr>
+	</table>
+</form>
+<include file="Public:main_bottom" /> 

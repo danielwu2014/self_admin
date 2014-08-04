@@ -1,0 +1,6 @@
+<include file="Public:main_top" />
+<form action="{:U('Attribute/optionUpdate')}" method="POST">
+  <input type="hidden" value="{$attrOption.option_id}" name="option_id">
+  <include file="optionAddEdit" />
+</form>
+<include file="Public:main_bottom" /> 

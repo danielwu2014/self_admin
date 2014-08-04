@@ -1,0 +1,108 @@
+<table cellspacing="1" cellpadding="2" border="0" style="width:100%">
+  <tr>
+    <td width="15%" nowrap="" align="right">产品SKU:</td>
+    <td width="35%"><input type="text" name="product_code" value="{$p.product_code}" style="width:154px" class="text">
+      <span class="red"></span></td>
+    <td width="18%" nowrap="" align="right">产品价格:</td>
+    <td width="35%"><input type="text" name="product_price" value="{$p.product_price}" style="width:154px" class="text">
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right">中文名称:</td>
+    <td width="35%"><input type="text" name="product_title" value="{$p.product_title}" style="width:400px" class="text"></td>
+    <td width="18%" nowrap="" align="right">采购价格:</td>
+    <td width="35%"><input type="text" name="purchase_price" value="{$p.purchase_price}" style="width:154px" class="text"></td>
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right">产品名称:</td>
+    <td width="35%"><input type="text" name="product_name" value="{$p.product_name}" style="width:400px" class="text"></td>
+    <td width="18%" nowrap="" align="right">采购地址一:</td>
+    <td width="35%"><input type="text" name="purchase_url_1" value="{$p.purchase_url_1}" style="width:400px" class="text"></td>
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right">产品数量:</td>
+    <td width="35%"><input type="text" name="product_quantity" value="{$p.product_quantity}" style="width:154px" class="text"></td>
+    <td nowrap="nowrap" align="right">采购地址二:</td>
+    <td><input type="text" name="purchase_url_2" value="{$p.purchase_url_2}" style="width:400px" class="text"></td>
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right">产品状态:</td>
+    <td width="35%"><input type="radio" name="product_status" value="1" <php>if(!isset($p) || $p['product_status']==1) echo 'checked="checked"'</php>>
+      上架
+      <input type="radio" name="product_status" value="0" <php>if(isset($p) && $p['product_status']==0) echo 'checked="checked"'</php>>
+      下架 </td>
+    <td nowrap="nowrap" align="right">产品批次</td>
+    <td><input type="text" name="product_batch" value="{$p.product_batch}" style="width:154px" class="text"></td>
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right" valign="top">产品图片:</td>
+    <td colspan="3" valign="top" id="pic_td">
+      <div><input type="file" name="pictures[]"><input id="add_pic" class="button" type="button" value="增加"></div>
+    </td>
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right" valign="top"></td>
+    <td colspan="3">
+
+        <foreach name="product_image" item="image" key="k">
+        <div style="float:left;margin-left:5px;">
+          <div><img src="{$image}" height="60"></div>
+          <div id="delImg_{$k}" style="text-align:center;cursor:pointer;"><img src="/Public/Images/X.gif"></div>
+        </div>
+        </foreach>
+      
+    </td>
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right">关键字:</td>
+    <td colspan="3"><textarea rows="10" cols="100" name="product_keywords">{$p.product_keywords}</textarea></td>
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right">产品描述:</td>
+    <td colspan="3"><textarea rows="10" cols="100" name="product_desc">{$p.product_desc}</textarea></td>
+  </tr> 
+  <tr>
+    <td colspan="4" align="center"><input type="submit" class="button" value="保存">
+      <input type="reset" class="button" value="重置"></td>
+  </tr>
+</table>
+<script type="text/javascript">
+  $("#add_pic").bind('click',function(){
+    var $addform=$("#pic_td div");
+    if($addform.length>=5) return false;
+    var len  = $addform.length+1;
+    var html = '<div><input type="file" name="pictures[]"><input id="delImgInput' +len + '" class="button" type="button" value="删除"></div>';
+    $('#pic_td').append(html);
+  });
+
+  $("div").on('click',"input[id^='delImgInput']",function(){
+    $(this).parent().remove();
+  })
+
+
+
+  //删除图片
+  $("div[id^='delImg_']").on('click',"",function(){
+    if(!confirm('确定删除该图片？')){
+       return false;
+    }
+    var $this = $(this);
+    var src = $(this).siblings().children().attr('src');
+    var obj = new Object();
+    obj.product_image = src;
+    obj.product_id = $("input[name='product_id']").val();
+    obj.target = 'delProductImg';
+    $.ajax({
+        type : 'POST',
+        url  : "{:U('ajax/index')}",
+        data : obj,
+        dataType : 'json',
+        success:function(data){
+           if(data.status==1){
+              alert(data.message);
+              $this.parent().remove();
+           }
+        }
+    })
+  })
+
+</script>

@@ -1,0 +1,29 @@
+<include file="Public:main_top" />
+
+<div style="margin:0 auto;width:99%;margin-top:5px;">
+  <table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+        <td height="10"></td>
+      </tr>
+      <tr>
+        <td height="40"><table width="100%" bgcolor="#464646" cellspacing="1" cellpadding="4" border="0">
+            <tbody>
+              <tr>
+                <td width="50%" bgcolor="#EEEEEE" align="center">属性名</td>
+                <td width="50%" bgcolor="#EEEEEE" align="center">属性值</td>
+              </tr>
+              <foreach name="voList" item="vo">
+              <tr align="center">
+                <td bgcolor="#FFFFFF">{$vo.option_name}</td>
+                <td bgcolor="#FFFFFF">{:implode(',',$vo['value_name'])}</td>
+            </foreach>
+            </tbody>
+          </table></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<include file="Public:main_bottom" /> 

@@ -1,0 +1,9 @@
+<include file="Public:main_top" />
+<fieldset style="height:100%;">
+  <legend>编辑产品</legend>
+  <form enctype="multipart/form-data" action="{:U('Product/update')}" method="POST">
+  	<input type="hidden" name="product_id" value="{$p.product_id}">
+  <include file="addedit"/>
+  </form>
+</fieldset>
+<include file="Public:main_bottom" /> 

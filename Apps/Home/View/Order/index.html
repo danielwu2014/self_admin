@@ -1,0 +1,58 @@
+<include file="Public:main_top" />
+<div style="width:100%;background-color:#FFF;padding:10px 0 10px 5px;">
+    <form action="" method="get">
+    <input type="hidden" name="c" value="{$Think.CONTROLLER_NAME}">
+    <input type="hidden" name="a" value="{$Think.ACTION_NAME}">
+    订单号：<input type="text" name="order_no" value="{$Think.get.order_no}">&nbsp;
+    订单状态：
+    <select name="order_status">
+      <option value=''>请选择</option>
+      <foreach name="order_statuses" item="v" key="k">
+      <option value="{$k}" <php>if($_GET['order_status']==$k) echo 'selected="selected"' ;</php>>{$v}</option>
+      </foreach>
+    </select>&nbsp;
+    姓名：<input type="text" name="customer_name" value="{$Think.get.customer_name}">&nbsp;
+    邮箱：<input type="text" name="customer_email" value="{$Think.get.customer_email}">&nbsp;
+    <input type="submit" class="button" value="查询">
+    </form>
+</div>
+<table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#464646" class="newfont03">
+  <tr>
+    <td width="10%" align="center" bgcolor="#EEEEEE">订单号</td>
+    <td width="" align="center" bgcolor="#EEEEEE">交易号</td>
+    <td width="" align="center" bgcolor="#EEEEEE">订单金额</td>
+    <td width="" align="center" bgcolor="#EEEEEE">订单状态</td>
+    <td width="" align="center" bgcolor="#EEEEEE">下单日期</td>
+    <td width="" align="center" bgcolor="#EEEEEE">运输方式</td>
+    <td width="" align="center" bgcolor="#EEEEEE">运输费用</td>
+    <td width="" align="center" bgcolor="#EEEEEE">邮箱</td>
+    <td width="" align="center" bgcolor="#EEEEEE">姓名</td>
+    <td width="" align="center" bgcolor="#EEEEEE">国家</td>
+    <td width="" align="center" bgcolor="#EEEEEE">省/州</td>
+    <td width="" align="center" bgcolor="#EEEEEE">城市</td>
+    <td width="" align="center" bgcolor="#EEEEEE">地址</td>
+    <td width="" align="center" bgcolor="#EEEEEE">邮编</td>
+    <td width="" align="center" bgcolor="#EEEEEE">电话</td>
+  </tr>
+  <foreach name="voList" item="vo" >
+  <tr>
+    <td height="30" bgcolor="#FFFFFF"><a href="{:U('Order/detail',array('order_id' => $vo['order_id']))}">{$vo.order_no}</a></td>
+    <td bgcolor="#FFFFFF">{$vo.trade_no}</td>
+    <td bgcolor="#FFFFFF">{$vo.order_amount}</td>
+    <td bgcolor="#FFFFFF">{$vo.order_status}</td>
+    <td bgcolor="#FFFFFF">{$vo.order_date}</td>
+    <td bgcolor="#FFFFFF">{$vo.shipping_method}</td>
+    <td bgcolor="#FFFFFF">{$vo.shipping_fee}</td>
+    <td bgcolor="#FFFFFF">{$vo.customer_email}</td>
+    <td bgcolor="#FFFFFF">{$vo.customer_name}</td>
+    <td bgcolor="#FFFFFF">{$vo.country}</td>
+    <td bgcolor="#FFFFFF">{$vo.state}</td>
+    <td bgcolor="#FFFFFF">{$vo.city}</td>
+    <td bgcolor="#FFFFFF">{$vo.address}</td>
+    <td bgcolor="#FFFFFF">{$vo.postcode}</td>
+    <td bgcolor="#FFFFFF">{$vo.phone}</td>
+  </tr>
+</foreach>
+</table>
+<div style="padding:5px;text-align:center">{$page}</div>
+<include file="Public:main_bottom" />

@@ -1,0 +1,1135 @@
+[ 2014-06-26T21:50:47+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2014-06-26T21:50:47+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=header
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2014-06-26T21:50:47+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=spe
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000985s ]
+
+[ 2014-06-26T21:50:47+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000298s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2014-06-26T21:50:47+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' E:\wamp\www\self_admin\Apps\Home\Controller\IndexController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2014-06-26T21:50:47+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=footer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001814s ]
+
+[ 2014-06-26T21:50:50+08:00 ] 127.0.0.1 /index.php?c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: p E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.017094s ]
+SQL: SELECT * FROM `order` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,2   [ RunTime:0.000441s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000176s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2014-06-26T21:50:53+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=index&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.002873s ]
+SQL: SELECT * FROM `order` WHERE ( 1=1 ) ORDER BY create_time LIMIT 2,2   [ RunTime:0.000382s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000167s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2014-06-26T21:50:54+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=index&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.002721s ]
+SQL: SELECT * FROM `order` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,2   [ RunTime:0.000358s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000142s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2014-06-26T21:50:57+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=detail&order_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.002747s ]
+SQL: SELECT * FROM `order` LIMIT 1   [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `order_product` [ RunTime:0.016650s ]
+SQL: SELECT * FROM `order_product` WHERE ( order_id='2' )  [ RunTime:0.000335s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2014-06-26T21:51:12+08:00 ] 127.0.0.1 /index.php?c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: p E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.002812s ]
+SQL: SELECT * FROM `order` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,2   [ RunTime:0.000351s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000141s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2014-06-26T21:52:49+08:00 ] 127.0.0.1 /index.php?c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: p E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003582s ]
+SQL: SELECT * FROM `order` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,2   [ RunTime:0.000422s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000190s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2014-06-26T21:52:50+08:00 ] 127.0.0.1 /index.php?c=order&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: order_products E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 41 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2014-06-26T21:52:52+08:00 ] 127.0.0.1 /index.php?c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: p E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003095s ]
+SQL: SELECT * FROM `order` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,2   [ RunTime:0.000394s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000184s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2014-06-26T21:52:53+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=detail&order_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.002769s ]
+SQL: SELECT * FROM `order` LIMIT 1   [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `order_product` [ RunTime:0.002778s ]
+SQL: SELECT * FROM `order_product` WHERE ( order_id='1' )  [ RunTime:0.000316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2014-06-26T21:53:09+08:00 ] 127.0.0.1 /index.php?c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: p E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.002976s ]
+SQL: SELECT * FROM `order` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,2   [ RunTime:0.000416s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000181s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2014-06-26T21:53:11+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=detail&order_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003043s ]
+SQL: SELECT * FROM `order` LIMIT 1   [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `order_product` [ RunTime:0.003455s ]
+SQL: SELECT * FROM `order_product` WHERE ( order_id='1' )  [ RunTime:0.000244s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2014-06-26T21:54:00+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=detail&order_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003342s ]
+SQL: SELECT * FROM `order` LIMIT 1   [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `order_product` [ RunTime:0.002992s ]
+SQL: SELECT * FROM `order_product` WHERE ( order_id='1' )  [ RunTime:0.000299s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2014-06-26T21:54:30+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=detail&order_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.002796s ]
+SQL: SELECT * FROM `order` LIMIT 1   [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `order_product` [ RunTime:0.002529s ]
+SQL: SELECT * FROM `order_product` WHERE ( order_id='1' )  [ RunTime:0.000302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2014-06-26T21:56:34+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=detail&order_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.002791s ]
+SQL: SELECT * FROM `order` LIMIT 1   [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `order_product` [ RunTime:0.002512s ]
+SQL: SELECT * FROM `order_product` WHERE ( order_id='1' )  [ RunTime:0.000240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2014-06-26T21:57:22+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=detail&order_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.002778s ]
+SQL: SELECT * FROM `order` LIMIT 1   [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `order_product` [ RunTime:0.002731s ]
+SQL: SELECT * FROM `order_product` WHERE ( order_id='1' )  [ RunTime:0.000242s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2014-06-26T21:57:24+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=detail&order_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003415s ]
+SQL: SELECT * FROM `order` LIMIT 1   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `order_product` [ RunTime:0.003061s ]
+SQL: SELECT * FROM `order_product` WHERE ( order_id='1' )  [ RunTime:0.000309s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2014-06-26T21:57:24+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=detail&order_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000285s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001665s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003078s ]
+SQL: SELECT * FROM `order` LIMIT 1   [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `order_product` [ RunTime:0.002708s ]
+SQL: SELECT * FROM `order_product` WHERE ( order_id='1' )  [ RunTime:0.000289s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2014-06-26T21:58:37+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=detail&order_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.002811s ]
+SQL: SELECT * FROM `order` LIMIT 1   [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `order_product` [ RunTime:0.003106s ]
+SQL: SELECT * FROM `order_product` WHERE ( order_id='1' )  [ RunTime:0.000360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2014-06-26T21:58:39+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=detail&order_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003086s ]
+SQL: SELECT * FROM `order` LIMIT 1   [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `order_product` [ RunTime:0.003661s ]
+SQL: SELECT * FROM `order_product` WHERE ( order_id='1' )  [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2014-06-26T21:58:39+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=detail&order_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003010s ]
+SQL: SELECT * FROM `order` LIMIT 1   [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `order_product` [ RunTime:0.002908s ]
+SQL: SELECT * FROM `order_product` WHERE ( order_id='1' )  [ RunTime:0.000229s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2014-06-26T21:58:48+08:00 ] 127.0.0.1 /index.php?c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: p E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003713s ]
+SQL: SELECT * FROM `order` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,2   [ RunTime:0.000450s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000184s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2014-06-26T21:58:51+08:00 ] 127.0.0.1 /index.php?c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: p E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003308s ]
+SQL: SELECT * FROM `order` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,2   [ RunTime:0.000356s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000125s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2014-06-26T21:58:52+08:00 ] 127.0.0.1 /index.php?c=order&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: order_products E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 41 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2014-06-26T21:58:54+08:00 ] 127.0.0.1 /index.php?c=order&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: order_products E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 41 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2014-06-26T21:58:55+08:00 ] 127.0.0.1 /index.php?c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: p E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003622s ]
+SQL: SELECT * FROM `order` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,2   [ RunTime:0.000414s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000139s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2014-06-26T21:58:57+08:00 ] 127.0.0.1 /index.php?c=order&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: order_products E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 41 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2014-06-26T21:59:06+08:00 ] 127.0.0.1 /index.php?c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: p E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003060s ]
+SQL: SELECT * FROM `order` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,2   [ RunTime:0.000314s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000117s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2014-06-26T21:59:08+08:00 ] 127.0.0.1 /index.php?c=order&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: order_products E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 41 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2014-06-26T21:59:09+08:00 ] 127.0.0.1 /index.php?c=order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: p E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003383s ]
+SQL: SELECT * FROM `order` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,2   [ RunTime:0.000409s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000179s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2014-06-26T21:59:10+08:00 ] 127.0.0.1 /index.php?c=order&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 20 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 21 行.
+NOTIC: [8] Undefined index: order_products E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 41 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2014-06-26T21:59:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2014-06-26T21:59:32+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2014-06-26T21:59:32+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=spe
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000903s ]
+
+[ 2014-06-26T21:59:32+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=footer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001474s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000929s ]
+
+[ 2014-06-26T21:59:32+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' E:\wamp\www\self_admin\Apps\Home\Controller\IndexController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2014-06-26T21:59:32+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=header
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2014-06-26T22:01:58+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000878s ]
+
+[ 2014-06-26T22:01:58+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=header
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2014-06-26T22:01:58+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' E:\wamp\www\self_admin\Apps\Home\Controller\IndexController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000943s ]
+
+[ 2014-06-26T22:01:58+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=spe
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001791s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001168s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001319s ]
+
+[ 2014-06-26T22:01:58+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000972s ]
+
+[ 2014-06-26T22:01:58+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=footer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+

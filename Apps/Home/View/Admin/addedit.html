@@ -1,0 +1,31 @@
+<table cellspacing="1" cellpadding="2" border="0" style="width:100%">
+  <tr>
+    <td width="15%" nowrap="" align="right">用户名:</td>
+    <td width="84%"><input type="text" name="admin_name" value="{$p.admin_name}" style="width:154px" class="text">
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right">密码:</td>
+    <td width="84%"><input type="password" name="admin_pwd" value="{$p.admin_pwd}" style="width:154px" class="text"></td>
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right">状态:</td>
+    <td width="84%"><input type="radio" name="status" value="1" <php>if(!isset($p) || $p['status']==1) echo 'checked="checked"'</php>>
+      启用
+      <input type="radio" name="status" value="0" <php>if(isset($p) && $p['status']==0) echo 'checked="checked"'</php>>
+      禁用 </td>
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right">邮箱:</td>
+    <td width="84%"><input type="text" name="email" value="{$p.email}" style="width:154px" class="text"></td>
+  </tr>      
+  <tr>
+    <td width="15%" nowrap="" align="right">昵称:</td>
+    <td width="84%"><input type="text" name="nickname" value="{$p.nickname}" style="width:154px" class="text"></td>
+  </tr>     
+  <tr>
+  <tr>
+    <td width="15%" nowrap="" align="right"></td>
+    <td width="84%"><input type="submit" class="button" value="保存">
+      <input type="reset" class="button" value="重置"></td>
+  </tr> 
+</table>

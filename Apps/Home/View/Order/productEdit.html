@@ -1,0 +1,76 @@
+<include file="Public:main_top" />
+<fieldset style="height:100%;">
+  <legend>产品信息</legend>
+  <form action="{:U('Order/productUpdate')}" method="POST">
+    <input type="hidden" name="order_product_id" value="{$p.order_product_id}">
+    <input type="hidden" name="order_id" value="{$p.order_id}">
+    <table cellspacing="1" cellpadding="2" border="0" style="width:100%">
+      <tr>
+        <td width="15%" nowrap="" align="right">SKU:</td>
+        <td width="35%"><input type="text" name="product_code" value="{$p.product_code}" style="width:154px" class="text">
+          <span class="red"></span></td>
+        <td nowrap="nowrap" align="right">产品尺寸:</td>
+        <td><input type="text" name="product_size" value="{$p.product_size}" style="width:154px" class="text" /></td>
+      </tr>
+      <tr>
+        <td width="15%" nowrap="" align="right">产品名称:</td>
+        <td width="35%"><input type="text" name="product_name" value="{$p.product_name}" style="width:154px" class="text"></td>
+        <td nowrap="nowrap" align="right">销售价格:</td>
+        <td><input type="text" name="product_price" value="{$p.product_price}" style="width:154px" class="text" /></td>
+      </tr>
+      <tr>
+        <td width="15%" nowrap="" align="right">产品颜色:</td>
+        <td width="35%"><input type="text" name="product_color" value="{$p.product_color}" style="width:154px" class="text"></td>
+        <td nowrap="nowrap" align="right">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="4" align="center"><input type="submit" class="button" value="保存">
+          <input type="reset" class="button" value="重置"></td>
+      </tr>
+    </table>
+  </form>
+</fieldset>
+
+<if condition="$p['purchase_status'] eq 1">
+<fieldset style="height:100%;">
+  <legend>采购信息</legend>
+  <form action="{:U('Order/productUpdate')}" method="POST">
+    <input type="hidden" name="order_product_id" value="{$p.order_product_id}">
+    <input type="hidden" name="order_id" value="{$p.order_id}">
+    <table cellspacing="1" cellpadding="2" border="0" style="width:100%">
+      <tr>
+        <td nowrap="nowrap" align="right">采购价格:</td>
+        <td><input type="text" name="purchase_price" value="{$p.purchase_price}" style="width:154px" class="text" /></td>
+        <td nowrap="nowrap" align="right">快递公司:</td>
+        <td><input type="text" name="express_company" value="{$p.express_company}" style="width:154px" class="text" /></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" align="right">采购地址:</td>
+        <td><input type="text" name="purchase_url" value="{$p.purchase_url}" style="width:400px" class="text" /></td>
+        <td nowrap="nowrap" align="right">快递单号:</td>
+        <td><input type="text" name="express_number" value="{$p.express_number}" style="width:154px" class="text" /></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" align="right">采购状态:</td>
+        <td><if condition="$p['purchase_status'] eq 1"> <span style="color:red;font-size:14px;">是</span>
+            <else/>
+            否 </if></td>
+        <td nowrap="nowrap" align="right">快递费用:</td>
+        <td><input type="text" name="express_fee" value="{$p.express_fee}" style="width:154px" class="text" /></td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap" align="right">采购时间:</td>
+        <td><if condition="$p['purchase_date']  gt 0">{$p.purchase_date|date="Y-m-d",###}</if></td>
+        <td nowrap="nowrap" align="right"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4" align="center"><input type="submit" class="button" value="保存">
+          <input type="reset" class="button" value="重置"></td>
+      </tr>
+    </table>
+  </form>
+</fieldset>
+</if>
+<include file="Public:main_bottom" /> 

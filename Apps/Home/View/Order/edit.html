@@ -1,0 +1,110 @@
+<include file="Public:main_top" />
+<link rel="stylesheet" rev="stylesheet" href="__PUBLIC__/Css/Datepicker/jquery.datepick.css" type="text/css" media="all" />
+<load href="__PUBLIC__/Js/Datepicker/jquery.plugin.js" />
+<load href="__PUBLIC__/Js/Datepicker/jquery.datepick.js" />
+<load href="__PUBLIC__/Js/Datepicker/jquery.datepick-zh-CN.js" />
+
+<table cellspacing="0" cellpadding="0" border="0" style="width:100%">
+  <tr>
+    <td width="100%"><fieldset style="height:100%;">
+        <legend>订单信息</legend>
+        <form action="{:U('Order/update')}" method="POST">
+          <input type="hidden" name="order_id" value="{$o.order_id}">
+          <table cellspacing="1" cellpadding="2" border="0" style="width:100%">
+            <tr>
+              <td width="15%" nowrap="" align="right">交易号:</td>
+              <td width="35%"><input type="text" name="trade_no" value="{$o.trade_no}" style="width:154px" class="text"></td>
+              <td width="18%" nowrap="" align="right">邮箱:</td>
+              <td width="35%"><input type="text" name="customer_email" value="{$o.customer_email}" style="width:154px" class="text"></td>
+            </tr>
+            <tr>
+              <td width="15%" nowrap="" align="right">订单金额:</td>
+              <td width="35%"><input type="text" name="order_amount" value="{$o.order_amount}" style="width:154px" class="text"></td>
+              <td width="18%" nowrap="" align="right">姓名:</td>
+              <td width="35%"><input type="text" name="customer_name" value="{$o.customer_name}" style="width:154px" class="text"></td>
+            </tr>
+            <tr>
+              <td width="15%" nowrap="" align="right">订单币种:</td>
+              <td width="35%"><select name="order_currency" id="select1">
+                  <option value="USD">USD</option>
+                </select></td>
+              <td width="18%" nowrap="" align="right">国家:</td>
+              <td width="35%"><input type="text" name="country" value="{$o.country}" style="width:154px" class="text"></td>
+            </tr>
+            <tr>
+              <td width="15%" nowrap="" align="right">订单状态:</td>
+              <td width="35%"><select name="order_status">
+                  <foreach name="order_statuses" item="v" key="k">
+                    <option value="{$k}" <if condition="$k eq $o['order_status']">selected="selected"</if>>{$v}</option>
+                  </foreach>
+                </select></td>
+              <td nowrap="nowrap" align="right">省/州:</td>
+              <td><input type="text" name="state" value="{$o.state}" style="width:154px" class="text"></td>
+            </tr>
+            <tr>
+              <td width="15%" nowrap="" align="right">下单日期:</td>
+              <td width="35%"><input type="text" id="order_date" name="order_date" value="{$o.order_date}" style="width:154px" class="text">
+                <img class="trigger datepick-trigger" alt="Popup" src="./Public/Images/Datepicker/calendar-green.gif"> <span class="red"></span></td>
+              <td width="18%" nowrap="" align="right">城市:</td>
+              <td width="35%"><input type="text" name="city" value="{$o.city}" style="width:154px" class="text"></td>
+            </tr>
+            <tr>
+              <td width="15%" nowrap="" align="right">支付方式:</td>
+              <td width="35%"><select name="payment_method_code">
+                  <foreach name="payment_methods" item="vo" >
+                    <option value="{$vo.code}">{$vo.name}</option>
+                  </foreach>
+                </select>
+                <span class="red"></span></td>
+              <td width="18%" nowrap="" align="right">地址:</td>
+              <td width="35%"><input type="text" name="address" value="{$o.address}" style="width:154px" class="text"></td>
+            </tr>
+            <tr>
+              <td width="15%" nowrap="" align="right">运输方式:</td>
+              <td width="35%"><select name="shipping_method_code">
+                  <foreach name="shipping_methods" item="vo">
+                    <option value="{$vo.code}"  <if condition="$vo['code'] eq $o['shipping_method_code']">selected="selected"</if>>{$vo.name}</option>
+                  </foreach>
+                </select>
+                <span class="red"></span></td>
+              <td width="18%" nowrap="" align="right">邮编:</td>
+              <td width="35%"><input type="text" name="postcode" value="{$o.postcode}" style="width:154px" class="text">
+                <!-- <span class="red">*</span> --></td>
+            </tr>
+            <tr>
+              <td nowrap="nowrap" align="right">运输费用:</td>
+              <td><input type="text" name="shipping_fee" value="{$o.shipping_fee}" style="width:154px" class="text"></td>
+              <td align="right">电话:</td>
+              <td><input type="text" name="phone" value="{$o.phone}" style="width:154px" class="text"></td>
+            </tr>
+            <tr>
+              <td width="15%" nowrap="" align="right">客户备注:</td>
+              <td colspan="3"><textarea rows="10" cols="100" name="customer_remark">{$o.customer_remark}</textarea></td>
+            </tr>
+            <tr>
+              <td width="15%" nowrap="" align="right">发货费用:</td>
+              <td colspan="3"><input type="sendfee" value="{$o.sendfee}"></td>
+            </tr>            
+            <tr>
+              <td colspan="4" align="center"><input type="submit" class="button" value="保存">
+              <input type="reset" class="button" value="重置"></td>
+            </tr>
+          </table>
+        </form>
+        <br>
+      </fieldset></td>
+  </tr>
+</table>
+<script type="text/javascript">
+
+$(function(){
+  $('#order_date').datepick({
+    dateFormat: 'yyyy-mm-dd',
+    // rangeSelect: true, 
+    // monthsToShow: 2, 
+    showTrigger: '#calImg',
+  });
+})
+
+</script> 
+<include file="Public:main_bottom" /> 

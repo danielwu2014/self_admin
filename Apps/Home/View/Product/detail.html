@@ -1,0 +1,74 @@
+<include file="Public:main_top" />
+<fieldset style="height:100%;">
+  <legend>产品信息</legend>
+  <table border="0" cellpadding="2" cellspacing="1" style="width:100%">
+     <tr>
+    <td width="15%" nowrap="" align="right">产品SKU:</td>
+    <td width="35%">{$p.product_code}</td>
+    <td width="18%" nowrap="" align="right">产品售价:</td>
+    <td width="35%">{$p.product_price}</td>
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right">中文名称:</td>
+    <td width="35%">{$p.product_title}</td>
+    <td width="18%" nowrap="" align="right">采购价格:</td>
+    <td width="35%">{$p.purchase_price}</td>
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right">产品名称:</td>
+    <td width="35%">{$p.product_name}</td>
+    <td width="18%" nowrap="" align="right">采购地址一:</td>
+    <td width="35%">{$p.purchase_url_1}</td>
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right">产品数量:</td>
+    <td width="35%">{$p.product_quantity}</td>
+    <td nowrap="nowrap" align="right">采购地址二:</td>
+    <td>{$p.purchase_url_2}</td>
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right">产品状态:</td>
+    <td width="35%">{$p.product_status}</td>
+    <td nowrap="nowrap" align="right"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right">关键字:</td>
+    <td colspan="3">{$p.product_keywords}</td>
+  </tr>
+  <tr>
+    <td width="15%" nowrap="" align="right">产品描述:</td>
+    <td colspan="3">{$p.product_desc}</td>
+  </tr>
+  </table>
+  <br />
+</fieldset>
+
+<div style="margin:0 auto;width:99%;margin-top:5px;text-align:center">
+  <a href="{:U('Product/edit',array('product_id' => $p['product_id']))}">
+    <input type="button" class="button" value="产品编辑" />
+  </a>
+  
+  <a href="{:U('Product/attr',array('product_id' => $p['product_id']))}">
+    <input type="button" class="button" value="属性管理" />
+  </a>
+</div>
+
+<fieldset style="height:100%;">
+  <legend>产品属性</legend>
+  <table border="0" cellpadding="4" cellspacing="1" style="width:100%" bgcolor="#464646">
+    <tr>
+      <td bgcolor="#EEEEEE" width="50%" align="center">属性名</td>
+      <td bgcolor="#EEEEEE" width="50%" align="center">属性值</td>
+    </tr>
+    <foreach name="productAttrs" item="attr">
+      <tr align="center">
+        <td  bgcolor="#FFFFFF">{$attr.option_name}</td>
+        <td  bgcolor="#FFFFFF">{$attr.value_name}</td>
+      </tr>
+    </foreach>
+    </tr>
+  </table>
+  <br />
+</fieldset>
+<include file="Public:main_bottom" />

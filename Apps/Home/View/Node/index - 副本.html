@@ -1,0 +1,159 @@
+<include file="Public:main_top" />
+<style type="text/css">
+#node-wrap {
+	position: relative;
+  top: 5px;
+	z-index: 100;
+}
+#node-nav {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#node-nav, #node-nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: "Microsoft 雅黑";
+	font-weight: bold;
+}
+#node-nav li a {
+	padding-left: 36px;
+	white-space: nowrap;
+}
+#node-nav li ul li a {
+	padding-left: 5px;
+}
+#node-nav ul {
+	padding-left: 20px;
+}
+#node-nav li a {
+	/*color: #66b;*/
+  color: #666666;
+	text-decoration: none;
+	font-size: 13px;
+}
+#node-nav li {
+	font-size: 13px;
+	line-height: 25px;
+  color: #666666;
+	/*color: #d80;*/
+	cursor: pointer;
+	width: 100%;
+}
+#node-nav li.down {
+	text-indent: 20px;
+}
+#node-nav li a:hover {
+	text-decoration: underline;
+}
+.span{
+  display: inline-block; 
+  height: 18px; vertical-align: middle; 
+  width: 16px;
+  cursor: pointer;
+  padding-right: 1px;
+}
+.closed {
+    background: url("./Public/Images/tree_node.gif") no-repeat scroll -4px -31px rgba(0, 0, 0, 0);
+}
+.opened {
+    background: url("./Public/Images/tree_node.gif") no-repeat scroll -4px -7px rgba(0, 0, 0, 0);
+}
+#node-nav li span .opr-a{
+  padding-left: 0px
+}
+</style>
+<div style="margin:5px;">
+  <input type="button" id="btn_order_product_add" class="button" value="新增目录">
+</div>
+<fieldset style="height:400px;">
+  <legend>节点列表</legend>
+ <div id="node-wrap">
+    <ul id="node-nav">  
+      <li class="p1 down"><span class="span closed"></span>系统管理<span><a href="">[添加]</a><a class="opr-a" href="">[修改]</a></span>
+        <ul>
+          <li><a href="#url">Printing</a></li>
+          <li><a href="#url">Photo Framing</a></li>
+          <li><a href="#url">Retouching</a></li>
+          <li><a href="#url">Archiving</a></li>
+        </ul>
+      </li>
+      <li class="p1 down"><span class="span closed"></span>订单管理
+        <ul>
+          <li><a href="#url">Support</a></li>
+          <li class="p2 down"><span class="span closed"></span>订单列表
+            <ul>
+              <li><a href="#url">Canadian</a></li>
+              <li><a href="#url">Australian</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="p1 down"><span class="span closed"></span>产品管理
+        <ul>
+          <li><a href="#url">Online</a></li>
+          <li><a href="#url">Catalogue</a></li>
+          <li><a href="#url">Mail Order</a></li>
+        </ul>
+      </li>
+      <li><a href="#url">属性管理</a></li>
+    </ul>
+  </div>
+</fieldset>
+
+<script language="javascript" type="text/javascript">
+$(document).ready(function() {
+
+  $("ul#node-nav ul").hide();
+  $('ul#node-nav li:has(ul)').each(function(i) {
+    $(this).children("li:not('span')").slideUp(400);
+  });
+
+  $('li.p1:has(ul)').click(function(event){
+    if (this == event.target) {
+      current = this;
+      $('ul#node-nav li:has(ul)').each(function(i) {
+        if (this != current) {
+          $(this).children("li:not('span')").slideUp(400);
+        }
+      });
+      if($(this).children("ul").css('display')=='none'){
+        $(this).children(".span").removeClass('closed').addClass('opened');
+      }else{
+        $(this).children(".span").removeClass('opened').addClass('closed');
+      }
+      $(this).children("ul:eq(0)").slideToggle(400);
+    }
+  });
+
+  $('li.p2:has(ul)').click(function(event){
+    if (this == event.target) {
+      current = this;
+      $('li.p2:has(ul)').each(function(i) {
+        if (this != current) {$(this).children().slideUp(400);}
+      });
+      $('li.p3:has(ul)').each(function(i) {
+        if (this != current) {$(this).children().slideUp(400);}
+      });
+      if($(this).children("ul").css('display')=='none'){
+        $(this).children(".span").removeClass('closed').addClass('opened');
+      }else{
+        $(this).children(".span").removeClass('opened').addClass('closed');
+      }
+      $(this).children("ul:eq(0)").slideToggle(400); 
+    }
+  });
+
+  $('li.p3:has(ul)').click(function(event){
+    if (this == event.target) {
+      current = this;
+      $('li.p3:has(ul)').each(function(i) {
+        if (this != current) {$(this).children().slideUp(400);}
+      });
+      $(this).children("ul:eq(0)").slideToggle(400); 
+    }
+  });
+});
+</script> 
+<include file="Public:main_bottom" />

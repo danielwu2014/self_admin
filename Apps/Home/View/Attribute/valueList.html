@@ -1,0 +1,93 @@
+<include file="Public:main_top" />
+<link rel="stylesheet" rev="stylesheet" href="__PUBLIC__/Css/Smoothness/jquery-ui-1.9.2.custom.css" type="text/css"/>
+<load href="__PUBLIC__/Js/jquery-ui-1.9.2.custom.js" />
+
+<notempty name="optionList">
+<div style="margin:5px;">
+  <input type="button" id="attr_value_add" class="button" value="新增属性值">
+</div>
+</notempty>
+
+<div style="margin:0 auto;width:99%;margin-top:5px;">
+  <table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+        <td height="20"><span class="newfont07">属性值列表</span></td>
+      </tr>
+      <tr>
+        <td height="40"><table width="100%" bgcolor="#464646" cellspacing="1" cellpadding="4" border="0">
+            <tbody>
+              <tr>
+                <td width="20%" bgcolor="#EEEEEE" align="center">ID</td>
+                <td width="20%" bgcolor="#EEEEEE" align="center">名称</td>
+                <td width="20%" bgcolor="#EEEEEE" align="center">排序</td>
+                <td width="20%" bgcolor="#EEEEEE" align="center">所属属性</td>
+                <td width="20%" bgcolor="#EEEEEE" align="center">操作</td>
+              </tr>
+              <foreach name="valueList" item="vl">
+              <tr align="center">
+                <td bgcolor="#FFFFFF">{$vl.value_id}</td>
+                <td bgcolor="#FFFFFF">{$vl.value_name}</td>
+                <td bgcolor="#FFFFFF">{$vl.value_sort}</td>
+                <td bgcolor="#FFFFFF">{$vl.option_name}</td>
+                <td bgcolor="#FFFFFF">
+                 <a href="{:U('Attribute/valueEdit',array('value_id'=>$vl['value_id']))}"><input type="button" class="button" value="编辑"></a>
+                 <a href="{:U('Attribute/valueDel',array('value_id'=>$vl['value_id']))}"><input type="button" class="button" value="删除"></a>
+                </td>
+            </foreach>
+            </tbody>
+          </table></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="attr_value_dlg" title="新增属性值">
+    <form action="{:U('Attribute/valueInsert')}" method="POST">
+      <table cellspacing="1" cellpadding="2" border="0" style="width:100%">
+        <tr height='40'>
+          <td width="21%">属性名:</td>
+          <td><select name="option_id">
+                <foreach name="optionList" item="op" >
+                  <option value="{$op.option_id}">{$op.option_name}</option>
+                </foreach>
+              </select></td>
+        </tr>
+        <tr>
+          <td>属性值:</td>
+          <td><input type="text" name="value_name" class="text"></td>
+        </tr>          
+        <tr>
+          <td>排序:</td>
+          <td><input type="text" name="value_sort" value='0' class="text"></td>
+        </tr>
+      </table>
+    </form>
+</div>
+
+<script type="text/javascript">
+
+$(function(){
+
+    $("#attr_value_dlg" ).dialog({
+      autoOpen: false,
+      height: 200,
+      width: 400,
+      modal: true,
+      buttons: {
+        "取消": function() {
+          $(this).dialog("close");
+        },
+        "提交":  function() {
+          $('form').submit();
+        }
+      }
+    });
+    $('#attr_value_add').click(function(){
+      $("#attr_value_dlg").dialog( "open" );
+    })
+})
+</script>
+
+<include file="Public:main_bottom" /> 
+

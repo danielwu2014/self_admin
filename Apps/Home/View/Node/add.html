@@ -1,0 +1,68 @@
+<include file="Public:main_top" />
+<fieldset style="height:100%;">
+  <legend>添加节点</legend>
+  <form action="{:U('Node/insert')}" method="POST">
+  <input type="hidden" name="pid" value="{$pid}">
+  <table cellspacing="1" cellpadding="2" border="0" style="width:100%">
+  <tr>
+    <td width="11%" align="right">节点名称:</td>
+    <td width="88%"><input type="text" name="name" value="" style="width:154px" class="text">
+  </tr>
+<!--   <tr>
+    <td width="11%" align="right">节点类型:</td>
+    <td width="88%"><input type="radio" name="authtype" value="0">
+      模块
+      <input type="radio" name="authtype" value="1">
+      菜单      
+      <input type="radio" name="authtype" value="-1">
+      权限</td>
+  </tr>  -->
+  <if condition="$pid gt 0">
+  <tr>
+    <td width="11%" align="right">控制器:</td>
+    <td width="88%"><input type="text" name="control" value="" style="width:154px" class="text">
+    	<span>如NodeController.class.php的控制器名称为Node</span></td>
+  </tr>
+  <tr>
+    <td width="11%" align="right">操作方法:</td>
+    <td width="88%"><input type="text" name="action" value="" style="width:154px" class="text">
+    	<span>控制器中的方法名称如：add、index</span></td>
+  </tr>
+  <tr>
+    <td width="11%" align="right">链接网址:</td>
+    <td width="88%"><input type="text" name="linkurl" value="" style="width:240px" class="text">
+    	<span>选填项，当没填写控制器和方法时，则启用该链接</span></td>
+  </tr>  
+  <tr>
+    <td width="11%" align="right"></td>
+    <td width="88%"><input type="radio" name="target" value="main" checked="checked">
+      框架窗口
+      <input type="radio" name="target" value="blank">
+      新开窗口 </td>
+  </tr>
+  </if> 
+  <tr>
+    <td width="11%" align="right">启用状态:</td>
+    <td width="88%">
+    	<select name="status">
+			<option value="1">启用</option>
+			<option value="0">禁止</option>                
+        </select>
+    </td>
+  </tr>
+  <tr>
+    <td width="11%" align="right">排序:</td>
+    <td width="88%"><input type="text" name="sort" value="0" style="width:46px" class="text">
+  </tr>      
+  <tr>
+    <td width="11%" align="right">备注内容:</td>
+    <td width="88%"><textarea rows="10" cols="100" name="remark"></textarea></td>
+  </tr>        
+  <tr>
+    <td colspan="2" align="center"><input type="submit" class="button" value="保存">
+      <input type="reset" class="button" value="重置"></td>
+  </tr>
+</table>
+  </form>
+</fieldset>
+<include file="Public:main_bottom" /> 

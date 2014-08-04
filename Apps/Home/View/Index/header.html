@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>项目管理系统</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#header{
+  height: 30px;
+  
+  font-family: "Microsoft Yahei";
+  font-size: 14px;
+}
+#header .welcome{
+  float: left;
+  font-weight: bold;
+  padding: 5px 0 0 15px;
+  color: #dddddd;
+}
+#header .loginout{
+  float: right;
+  padding: 5px 20px;
+}
+#header .loginout a{
+  text-decoration: none;
+}
+#header .marquee{
+  padding: 5px 0 0 50px;
+  float: left;
+  color: #FF0000;
+}
+-->
+</style>
+<link href="__PUBLIC__/Css/base.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="header">
+  <span class="welcome">欢迎 {$Think.session.admin_name} 登陆：DDhouse-Stylishelf</span>
+  <span class="marquee"><marquee>今日菜谱：干豆角炒肉、芹菜香干、上海青</marquee></span>
+  <if condition="$Think.session.admin_id gt 0 ">
+  <span class="loginout"><a target="_parent" href="{:U('Public/loginOut')}">登出系统</a></span>
+  </if>
+</div>
+</body>
+</html>

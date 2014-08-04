@@ -1,0 +1,570 @@
+[ 2014-07-15T21:35:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.037439s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Index' ) AND ( `action` = 'index' ) LIMIT 1   [ RunTime:0.000405s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2014-07-15T21:35:34+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=header
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.004066s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Index' ) AND ( `action` = 'header' ) LIMIT 1   [ RunTime:0.000347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined index: admin_id E:\wamp\www\self_admin\Runtime\Cache\Home\4cdbbe45fa9dbf00382f8519e005bdb9.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2014-07-15T21:35:34+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003379s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Index' ) AND ( `action` = 'left' ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SELECT * FROM node WHERE status=1 AND level=1 ORDER BY sort [ RunTime:0.000331s ]
+SQL: SELECT * FROM node WHERE status=1 AND level=2 AND pid=4 ORDER BY sort [ RunTime:0.000279s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='5' [ RunTime:0.000223s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='6' [ RunTime:0.000294s ]
+SQL: SELECT * FROM node WHERE status=1 AND level=2 AND pid=15 ORDER BY sort [ RunTime:0.000374s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='16' [ RunTime:0.000448s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='17' [ RunTime:0.000278s ]
+SQL: SELECT * FROM node WHERE status=1 AND level=2 AND pid=12 ORDER BY sort [ RunTime:0.000335s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='21' [ RunTime:0.000157s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='14' [ RunTime:0.000114s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='19' [ RunTime:0.000104s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='20' [ RunTime:0.000104s ]
+SQL: SELECT * FROM node WHERE status=1 AND level=2 AND pid=1 ORDER BY sort [ RunTime:0.000176s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='2' [ RunTime:0.000132s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='3' [ RunTime:0.001089s ]
+SQL: SELECT * FROM node WHERE status=1 AND level=2 AND pid=9 ORDER BY sort [ RunTime:0.000417s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='10' [ RunTime:0.000199s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='11' [ RunTime:0.000188s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000922s ]
+
+[ 2014-07-15T21:35:34+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=footer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001363s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003000s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Index' ) AND ( `action` = 'footer' ) LIMIT 1   [ RunTime:0.000304s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2014-07-15T21:35:34+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003506s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Index' ) AND ( `action` = 'main' ) LIMIT 1   [ RunTime:0.000281s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' E:\wamp\www\self_admin\Apps\Home\Controller\IndexController.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2014-07-15T21:35:34+08:00 ] 127.0.0.1 /index.php?m=Home&c=Index&a=spe
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.002744s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Index' ) AND ( `action` = 'spe' ) LIMIT 1   [ RunTime:0.000255s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2014-07-15T21:35:37+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003928s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Order' ) AND ( `action` = 'index' ) LIMIT 1   [ RunTime:0.000473s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 5 ) LIMIT 1   [ RunTime:0.000303s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 4 ) LIMIT 1   [ RunTime:0.000202s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='5' [ RunTime:0.000245s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\www\self_admin\ThinkPHP\Library\Org\Util\Breadcrumb.class.php 第 30 行.
+NOTIC: [8] Undefined index: p E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.049925s ]
+SQL: SELECT * FROM `order` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,20   [ RunTime:0.010860s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000264s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2014-07-15T21:35:42+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.002791s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Order' ) AND ( `action` = 'add' ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 6 ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 4 ) LIMIT 1   [ RunTime:0.000218s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='6' [ RunTime:0.000206s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\www\self_admin\ThinkPHP\Library\Org\Util\Breadcrumb.class.php 第 30 行.
+NOTIC: [8] Undefined index: order_products E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2014-07-15T21:35:45+08:00 ] 127.0.0.1 /index.php?m=Home&c=Product&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.002709s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Product' ) AND ( `action` = 'index' ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 16 ) LIMIT 1   [ RunTime:0.000206s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 15 ) LIMIT 1   [ RunTime:0.000189s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='16' [ RunTime:0.000180s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\www\self_admin\ThinkPHP\Library\Org\Util\Breadcrumb.class.php 第 30 行.
+NOTIC: [8] Undefined index: p E:\wamp\www\self_admin\Apps\Home\Controller\ProductController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.039039s ]
+SQL: SELECT * FROM `product` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,20   [ RunTime:0.010063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000454s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\ProductController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2014-07-15T21:35:51+08:00 ] 127.0.0.1 /index.php?m=Home&c=Product&a=edit&product_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003895s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Product' ) AND ( `action` = 'edit' ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 18 ) LIMIT 1   [ RunTime:0.000228s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 16 ) LIMIT 1   [ RunTime:0.000216s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 15 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='16' [ RunTime:0.000217s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='18' [ RunTime:0.000168s ]
+NOTIC: [8] Undefined offset: 3 E:\wamp\www\self_admin\ThinkPHP\Library\Org\Util\Breadcrumb.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.003644s ]
+SQL: SELECT * FROM `product` WHERE ( product_id=1 ) LIMIT 1   [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2014-07-15T21:35:52+08:00 ] 127.0.0.1 /index.php?m=Home&c=Product&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003339s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Product' ) AND ( `action` = 'index' ) LIMIT 1   [ RunTime:0.000275s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 16 ) LIMIT 1   [ RunTime:0.000227s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 15 ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='16' [ RunTime:0.000229s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\www\self_admin\ThinkPHP\Library\Org\Util\Breadcrumb.class.php 第 30 行.
+NOTIC: [8] Undefined index: p E:\wamp\www\self_admin\Apps\Home\Controller\ProductController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.002651s ]
+SQL: SELECT * FROM `product` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,20   [ RunTime:0.000301s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000177s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\ProductController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2014-07-15T21:35:54+08:00 ] 127.0.0.1 /index.php?m=Home&c=Product&a=attr&product_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.004350s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Product' ) AND ( `action` = 'attr' ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.002735s ]
+SQL: SELECT `product_code` FROM `product` WHERE ( product_id=1 ) LIMIT 1   [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `attribute_option` [ RunTime:0.024060s ]
+SQL: SELECT * FROM `attribute_option` ORDER BY option_sort asc  [ RunTime:0.000421s ]
+SQL: SELECT pa.product_attr_id,ao.option_name,av.value_name FROM product_attribute AS pa 
+					   LEFT JOIN attribute_option AS ao ON pa.option_id=ao.option_id 
+					   LEFT JOIN attribute_value AS av ON pa.value_id=av.value_id 
+					   WHERE pa.product_id=1 ORDER BY ao.option_sort,av.value_sort [ RunTime:0.048009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2014-07-15T21:36:02+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003090s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Order' ) AND ( `action` = 'index' ) LIMIT 1   [ RunTime:0.000449s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 5 ) LIMIT 1   [ RunTime:0.000368s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 4 ) LIMIT 1   [ RunTime:0.000430s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='5' [ RunTime:0.000306s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\www\self_admin\ThinkPHP\Library\Org\Util\Breadcrumb.class.php 第 30 行.
+NOTIC: [8] Undefined index: p E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.002918s ]
+SQL: SELECT * FROM `order` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,20   [ RunTime:0.000416s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2014-07-15T21:36:04+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003037s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Order' ) AND ( `action` = 'add' ) LIMIT 1   [ RunTime:0.000245s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 6 ) LIMIT 1   [ RunTime:0.000207s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 4 ) LIMIT 1   [ RunTime:0.000186s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='6' [ RunTime:0.000204s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\www\self_admin\ThinkPHP\Library\Org\Util\Breadcrumb.class.php 第 30 行.
+NOTIC: [8] Undefined index: order_products E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2014-07-15T21:36:07+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.003069s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Order' ) AND ( `action` = 'index' ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 5 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 4 ) LIMIT 1   [ RunTime:0.000243s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='5' [ RunTime:0.000234s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\www\self_admin\ThinkPHP\Library\Org\Util\Breadcrumb.class.php 第 30 行.
+NOTIC: [8] Undefined index: p E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.002948s ]
+SQL: SELECT * FROM `order` WHERE ( 1=1 ) ORDER BY create_time LIMIT 0,20   [ RunTime:0.000367s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.000138s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2014-07-15T21:36:10+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=detail&order_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.002781s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Order' ) AND ( `action` = 'detail' ) LIMIT 1   [ RunTime:0.000226s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 7 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 5 ) LIMIT 1   [ RunTime:0.000178s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 4 ) LIMIT 1   [ RunTime:0.000193s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='5' [ RunTime:0.000236s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='7' [ RunTime:0.000158s ]
+NOTIC: [8] Undefined offset: 3 E:\wamp\www\self_admin\ThinkPHP\Library\Org\Util\Breadcrumb.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.002917s ]
+SQL: SELECT * FROM `order` WHERE ( `order_id` = 4 ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `order_status` [ RunTime:0.002187s ]
+ERR: 1146:Table 'self_admin.order_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `order_status`
+SQL: SELECT `status_id`,`status_name` FROM `order_status`  [ RunTime:0.000224s ]
+ERR: 1146:Table 'self_admin.order_status' doesn't exist
+ [ SQL语句 ] : SELECT `status_id`,`status_name` FROM `order_status` 
+SQL: SHOW COLUMNS FROM `order_product` [ RunTime:0.038268s ]
+SQL: SELECT * FROM `order_product` WHERE ( order_id='4' )  [ RunTime:0.000520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2014-07-15T21:45:19+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.004381s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Order' ) AND ( `action` = 'add' ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 6 ) LIMIT 1   [ RunTime:0.000915s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 4 ) LIMIT 1   [ RunTime:0.000389s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='6' [ RunTime:0.000440s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\www\self_admin\ThinkPHP\Library\Org\Util\Breadcrumb.class.php 第 30 行.
+NOTIC: [8] Undefined index: order_products E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2014-07-15T21:45:24+08:00 ] 127.0.0.1 /index.php?m=Home&c=Order&a=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.002809s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Order' ) AND ( `action` = 'insert' ) LIMIT 1   [ RunTime:0.000274s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+
+[ 2014-07-15T21:45:27+08:00 ] 127.0.0.1 /index.php?m=Home&c=order&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 14 行.
+NOTIC: [2048] Only variables should be assigned by reference E:\wamp\www\self_admin\Apps\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.002738s ]
+SQL: SELECT `nid` FROM `node` WHERE ( `control` = 'Order' ) AND ( `action` = 'add' ) LIMIT 1   [ RunTime:0.000239s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 6 ) LIMIT 1   [ RunTime:0.000204s ]
+SQL: SELECT * FROM `node` WHERE ( `nid` = 4 ) LIMIT 1   [ RunTime:0.000185s ]
+SQL: SELECT control,action,linkurl FROM node WHERE nid='6' [ RunTime:0.000184s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\www\self_admin\ThinkPHP\Library\Org\Util\Breadcrumb.class.php 第 30 行.
+NOTIC: [8] Undefined index: order_products E:\wamp\www\self_admin\Apps\Home\Controller\OrderController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001163s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001276s ]
+

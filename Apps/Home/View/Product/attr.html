@@ -1,0 +1,82 @@
+<include file="Public:main_top" />
+<link rel="stylesheet" rev="stylesheet" href="__PUBLIC__/Css/Smoothness/jquery-ui-1.9.2.custom.css" type="text/css"/>
+<load href="__PUBLIC__/Js/jquery-ui-1.9.2.custom.js" />
+<div style="margin:0 auto;width:99%;margin-top:5px;text-align:center">
+  <h3>产品SKU：{$product_url}</h3>
+</div>
+<fieldset style="height:100%;">
+  <legend>添加产品属性</legend>
+  <form action="{:U('Product/insertAttr')}" method="POST">
+    <input type="hidden" name="product_id" value="{$Think.get.product_id}">
+    <table align="center" cellspacing="0" cellpadding="2" border="0" style="width:50%">
+      <tr>
+        <td valign="top" align="right">
+          属性名：<br/>
+          <select id="option_id" name="option_id" size="15">
+            <foreach name="options" item="op">
+              <option value="{$op.option_id}">{$op.option_name}&nbsp;&nbsp;[#{$op.option_id}]</option>
+            </foreach>
+          </select>
+        </td>
+        <td widht="30"></td>
+        <td valign="top" align="left">
+          属性值：<br/>
+          <select id="value_id" name="value_id[]" size="15" multiple="multiple">
+            <option>请选择属性值</option>
+          </select>
+        </td>
+
+      </tr>
+      <tr>
+        <td colspan="3" align="center"><input type="submit" class="button" value="保存">
+          <input type="reset" class="button" value="重置"></td>
+      </tr>
+    </table>
+  </form>
+</fieldset>
+
+<div style="margin:0 auto;width:99%;margin-top:5px;">
+  <table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+        <td height="20"><span class="newfont07">产品属性</span></td>
+      </tr>
+      <tr>
+        <td height="40"><table width="100%" bgcolor="#464646" cellspacing="1" cellpadding="4" border="0">
+            <tbody>
+              <tr>
+                <td width="30%" bgcolor="#EEEEEE" align="center">属性名</td>
+                <td width="30%" bgcolor="#EEEEEE" align="center">属性值</td>
+                <td width="40%" bgcolor="#EEEEEE" align="center">操作</td>
+              </tr>
+              <foreach name="productAttrs" item="attr">
+                <tr align="center">
+                  <td bgcolor="#FFFFFF">{$attr.option_name}</td>
+                  <td bgcolor="#FFFFFF">{$attr.value_name}</td>
+                  <td bgcolor="#FFFFFF"><a href="{:U('Product/deleteAttr',array('product_attr_id'=>$attr['product_attr_id']))}"><input type="button" class="button" value="删除"></a></td>
+              </foreach>
+            </tbody>
+          </table></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<include file="Public:main_bottom" /> 
+<script type="text/javascript">
+$('#option_id').click(function(){
+    $.ajax({
+        type : 'POST',
+        url  : "{:U('Product/getAttrValue')}",
+        dataType : 'json',
+        data : {
+            'option_id' : $(this).val(),
+        },
+        beforeSend:function(){
+
+        },
+        success:function(data){
+          $('#value_id').html(data);
+        }
+    })
+})
+</script>
