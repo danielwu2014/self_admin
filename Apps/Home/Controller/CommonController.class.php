@@ -17,9 +17,9 @@ class CommonController extends Controller {
 		$this->post = $_POST;
 		$this->get  = $_GET;
 
-		/*if(!isset($_SESSION['admin_pwd']) && CONTROLLER_NAME !="Public"){
+		if(!isset($_SESSION['admin_id']) && CONTROLLER_NAME !="Public"){
 	       $this->redirect('Public/login');exit;
-	    }*/
+	    }
 
 		$breadcrumb = getBreadcrumb();
 	    $this->assign('breadcrumb',$breadcrumb);

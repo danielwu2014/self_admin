@@ -144,11 +144,18 @@ class ProductController extends CommonController {
 		$this->assign('p',$product);
 		//产品属性值
 		$paModel = M();
-		$filter_sql = "SELECT pa.product_attr_id,ao.option_name,av.value_name FROM product_attribute AS pa 
+		$filter_sql = "SELECT pa.product_attr_id,pa.option_id,ao.option_name,av.value_name FROM product_attribute AS pa 
 					   LEFT JOIN attribute_option AS ao ON pa.option_id=ao.option_id 
 					   LEFT JOIN attribute_value AS av ON pa.value_id=av.value_id 
 					   WHERE pa.product_id=".(int)$product_id." ORDER BY ao.option_sort,av.value_sort";
-		$productAttrs = $paModel->query($filter_sql);
+		$tempAttrs = $paModel->query($filter_sql);
+		$productAttrs = $tempArr = array();
+		foreach($tempAttrs as $attr){
+			$productAttrs[$attr['option_id']]['option_name'] = $attr['option_name'];
+			$tempArr[$attr['option_id']][] = $attr['value_name'];
+			$productAttrs[$attr['option_id']]['value_name'] = implode($tempArr[$attr['option_id']], ',');
+		}
+		unset($tempAttrs,$tempArr);
 		$this->assign('productAttrs',$productAttrs);
 
 		$breadArr = array(
