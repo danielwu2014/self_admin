@@ -5,6 +5,8 @@ Vendor('PHPExcel.PHPExcel');
 class ExcelOption{
 	private $error = '';
 	private $exts  = 'xlsx';
+	private $savePath = './download/';
+
 	public function __construct(){
 
 	}
@@ -60,10 +62,11 @@ class ExcelOption{
 	 * 生成Excel
 	 * @param array data 二维数组，数组的第一个元素为Excel的标题
 	 * @param string fileName 生成的Excel名称
-	 * @param array $drawInfo 图片单元格信息 array('imagePath'=>'','position'=>'')
+	 * @param array $drawpst 是否图片单元格
+	 * @param integer type 0文件通过浏览器下载;1脚本方式运行保存在当前目录
 	 *  
 	 */
-	public function createExcel($data,$fileName='',$drawInfo=array()){
+	public function createExcel($data,$fileName='',$drawpst='',$type='0'){
 
 		if(empty($data)){
 			$this->error = '没有数据';
@@ -75,7 +78,7 @@ class ExcelOption{
 		}
 
 		$objExcel = new \PHPExcel();
-        $objExcel->getDefaultStyle()->getFont()->setName( 'Arial');
+        $objExcel->getDefaultStyle()->getFont()->setName('Arial');
         $objExcel->setActiveSheetIndex(0);   
   
         $objActSheet = $objExcel->getActiveSheet();   
@@ -83,13 +86,24 @@ class ExcelOption{
         //设置当前活动sheet的名称   
         $objActSheet->setTitle('Sheet1'); 
 
+        //设置默认行高
+		//$objActSheet->getDefaultRowDimension()->setRowHeight(50);
+
         //设置单元格信息
         $column = 1;
         foreach($data as $arr){
             $body_assic = ord('A');
             foreach($arr as $val){
+
                 $temp_key = chr($body_assic);
-                $objActSheet->setCellValue($temp_key.$column,$val);
+                if($temp_key==strtoupper($drawpst) && $column!=1){
+                	$drawinfo['imagePath']   = $val;
+                	$drawinfo['position']    = $drawpst.$column;
+                	$drawinfo['objActSheet'] = $objActSheet;
+                	$this->worksheetDrawing($drawinfo);
+                }else{
+                	$objActSheet->setCellValue($temp_key.$column,$val);
+                }
                 $body_assic++;
             }
             $column++;
@@ -99,8 +113,18 @@ class ExcelOption{
         $exts = strtolower(substr($outputFileName, strrpos($outputFileName, '.')+1));
         $className = '\PHPExcel_Writer_'.$this->getClassName($exts);  
         $objWriter = new $className($objExcel);
-        $objWriter->save($outputFileName);
-        // @todo 直接浏览器输出
+
+        if($type==0){
+        	//$objWriter->save($this->savePath.$outputFileName);
+			header("Content-Disposition:attachment;filename=$outputFileName");  
+	        header("Content-Type:application/octet-stream");  
+	        header("Content-Transfer-Encoding:binary");  
+	        header("Pragma:no-cache");
+	        //echo file_get_contents($this->savePath.$outputFileName);
+	        $objWriter->save('php://output');
+        }else{
+        	$objWriter->save($this->savePath.$outputFileName);
+        }
         return true;
 	}
 
@@ -124,19 +148,35 @@ class ExcelOption{
 		return $className;
 	}
 
-	private function worksheetDrawing($imagePath,$objActSheet,$position,$config=array()){
-		$config = array_merge(array('name'=>'','desc'=>'' ),$config);
-		$objDrawing = new \PHPExcel_Worksheet_Drawing();   
-        $objDrawing->setName($config['name']);   
-        $objDrawing->setDescription($config['desc']);   
-        $objDrawing->setPath($imagePath);   
-        $objDrawing->setHeight(50);   
-        $objDrawing->setCoordinates($position);//设置图片所在位置
-        $objDrawing->setOffsetX(10);   
+	/**
+	 *  生成图片单元格
+	 *	@param array $drawinfo = array(
+	 *				'imagePath'   => '',//图片路径，貌似只能为本地路径
+	 *				'objActSheet' => '',//Excel单元格对象实例
+	 *				'position'    => '',//生成图片的单元格位置即列位置，如：F
+	 *				'name'        => '', 
+	 *				'description' => ''
+	 *			)
+	 */
+	private function worksheetDrawing($drawinfo){
+		if(empty($drawinfo['imagePath']) || empty($drawinfo['objActSheet']) || empty($drawinfo['position'])){
+			return false;
+		}
+        $objDrawing = new \PHPExcel_Worksheet_Drawing();
+        $objDrawing->setPath($drawinfo['imagePath']);     
+        $objDrawing->setCoordinates(strtoupper($drawinfo['position']));//设置图片所在位置
+        if($drawinfo['name']){
+			$objDrawing->setName($drawinfo['name']);   
+		}   
+        if($drawinfo['description']){
+        	$objDrawing->setDescription($drawinfo['description']);   
+        }
+        $objDrawing->setHeight(50); 
+        /*$objDrawing->setOffsetX(10);   
         $objDrawing->setRotation(15);   
         $objDrawing->getShadow()->setVisible(true);   
-        $objDrawing->getShadow()->setDirection(36);   
-        $objDrawing->setWorksheet($objActSheet);   
+        $objDrawing->getShadow()->setDirection(36); */  
+        $objDrawing->setWorksheet($drawinfo['objActSheet']);   
 	}
 
 	public function getError(){

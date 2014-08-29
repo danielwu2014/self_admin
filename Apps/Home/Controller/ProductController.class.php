@@ -52,7 +52,7 @@ class ProductController extends CommonController {
 		}else{
 			$image = $product_image;
 		}
-		return $domain.C('IMAGE_URL').$image;
+		return $domain.C('IMAGE_DIR').$image;
 	}
 
 	public function getProductImages($product_image,$domain=''){
@@ -64,7 +64,7 @@ class ProductController extends CommonController {
 		}
 		$productImageUrl = array();
 		foreach($imageArr as $image){
-			$productImageUrl[] = $domain.C('IMAGE_URL').$image;
+			$productImageUrl[] = $domain.C('IMAGE_DIR').$image;
 		}
 		return $productImageUrl;
 	}
