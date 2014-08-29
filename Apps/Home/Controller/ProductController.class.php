@@ -69,7 +69,13 @@ class ProductController extends CommonController {
 		return $productImageUrl;
 	}
 
-	public function add(){
+	public function add(){/*
+		$paModel = M();
+		$filter_sql = "SELECT pa.option_id,pa.value_id,av.value_name FROM product_attribute AS pa 
+					   LEFT JOIN attribute_value AS av ON pa.value_id=av.value_id 
+					   WHERE pa.option_id='".C('Default_COLOR_Option')."' ORDER BY av.value_sort";		
+		$productAttrs = $paModel->query($filter_sql);
+		st_dump($productAttrs,1);*/
 		$this->display();
 	}
 
@@ -264,5 +270,19 @@ class ProductController extends CommonController {
         $uploadObj->mimes=array('image/png','image/jpeg','image/jpg','image/gif','image/pjpeg');
         $uploadInfo = $uploadObj->upload();
         return $uploadInfo;
+	}
+
+	public function importProducts(){
+		$excelOption = new \Org\Util\ExcelOption();
+		$filePath = './uploads/DDFF0041-DDFF0070.xlsx';
+		$exts = 'xlsx';
+		//$excelOption->readExcel($filePath,$exts);
+
+       $body_arr = array(
+            0 => array('中国','11','11','21'),
+            1 => array('日本','133','11','21'),
+            2 => array('美国','13431','11','21'),
+        );
+       $excelOption->createExcel($body_arr,'test.xls');
 	}
 }
