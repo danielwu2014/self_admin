@@ -97,3 +97,38 @@ function getAllParent($nid, &$node_arr=''){
     $node_arr[$node['nid']] = $node;
     return $node_arr;
 }
+
+/**
+ * 获取当前目录下的文件或目录
+ * @param string $dirname 目录路径
+ * @param string $exclude 排除函数名
+ */
+function get_dir_file($dirname,$exclude=''){
+    $handler  = opendir($dirname);
+    if(false==$handler) return ;
+    $file_arr = array();
+    while(false!==($file=readdir($handler))){
+        if($file != "." && $file != ".."){
+            $filepath = $dirname.DIRECTORY_SEPARATOR.$file;
+            if($exclude && function_exists($exclude) && !$exclude($filepath))
+                continue;
+            $file_arr[] = $file;
+        }
+    }
+    closedir($handler);
+    return $file_arr;
+}
+
+/**
+ * 创建目录，可创建多级
+ * @param string $dir 路径
+ * @param string $mode 权限
+ * @return bool 创建成功，返回true，否则返回false 
+ */
+function mk_dir($dir, $mode = 0775) {
+    if(is_dir($dir) || @mkdir($dir, $mode))
+       return true;
+    if(!mk_dir(dirname($dir), $mode))
+       return false;
+    return @mkdir($dir, $mode);
+}

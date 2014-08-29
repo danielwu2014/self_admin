@@ -48,5 +48,13 @@ return array(
    'Default_COLOR_Option' => 1,// 系统默认属性为颜色(1)、尺寸(2)
    'Default_SIZE_Option' => 2,
    'AMAZON_FEE_PERCENT' => 0.15,//亚马逊15%的手续费
-   'IMAGE_URL' => '/images/',
+   'IMAGE_DIR' => './images/',
+
+   'ORIGINAL_IMAGE_DIR' => 'o', //original
+   'IMAGE_CROP_PARAM' => array(
+        'l' => '360:540', //large
+        'm' => '240:360', //medium
+        'g' => '120:180', //grid
+        's' => '60:90'    //small
+    )
 );
