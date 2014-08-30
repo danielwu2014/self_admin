@@ -6,6 +6,24 @@ class ProductController extends CommonController {
 	var $return_url;
 	public function _initialize(){
 		parent::_initialize();
+        if(!S("tableFileField")){
+			$tableFileField = array(
+				'product_code'=>'SKU',
+				'product_batch'=>'批次',
+				'product_quantity'=>'数量',
+				'product_status' => '状态',
+				'product_title'=>'标题',
+				'product_name'=>'名称',
+				'product_size'=>'尺寸',
+				'product_color'=>'颜色',
+				'product_desc'=>'描述',
+				'product_price'=>'售价',
+				'purchase_price'=>'采购价格',
+				'purchase_url_1'=>'采购地址1',
+				'purchase_url_2'=>'采购地址2',
+			);
+            S("tableFileField",$tableFileField);
+        }		
 		$this->return_url = U('Product/index');
 	}
 	public function index(){
@@ -22,10 +40,10 @@ class ProductController extends CommonController {
 		foreach ($voList as $key => &$val) {
 			$val['product_status'] = $val['product_status'] == 1 ? '上架' : '下架';
 			$val['product_name_s'] =  \Org\Util\String::msubstr($val['product_name'],0,30);
-			$val['product_keywords_s'] =  \Org\Util\String::msubstr($val['product_keywords'],0,30);
-			$val['product_desc_s'] =  \Org\Util\String::msubstr($val['product_desc'],0,30);
-			$val['purchase_url_1_s'] =  \Org\Util\String::msubstr($val['purchase_url_1'],0,30);
-			$val['product_title_s'] =  \Org\Util\String::msubstr($val['product_title'],0,15);
+			$val['product_keywords_s'] =  $val['product_keywords'] ?\Org\Util\String::msubstr($val['product_keywords'],0,30) : '';
+			$val['product_desc_s'] =  $val['product_desc'] ?\Org\Util\String::msubstr($val['product_desc'],0,30) : '';
+			$val['purchase_url_1_s'] =  $val['purchase_url_1'] ? \Org\Util\String::msubstr($val['purchase_url_1'],0,30) : '';
+			$val['product_title_s'] =  $val['product_title'] ? \Org\Util\String::msubstr($val['product_title'],0,15) : '';
 			if($val['product_image']){
 				$val['product_image_url'] = $this->getListImage($val['product_image']);
 				$val['product_image_url'] = '<img src="'.$val['product_image_url'].'" height="60">';
@@ -272,17 +290,105 @@ class ProductController extends CommonController {
         return $uploadInfo;
 	}
 
-	public function importProducts(){
-		$excelOption = new \Org\Util\ExcelOption();
-		$filePath = './uploads/DDFF0041-DDFF0070.xlsx';
-		$exts = 'xlsx';
-		//$excelOption->readExcel($filePath,$exts);
+	public function import(){
+		$step = isset($_GET['step']) ? $_GET['step'] : 1;
 
-       $body_arr = array(
-            0 => array('中国','11','11','21'),
-            1 => array('日本','133','11','21'),
-            2 => array('美国','13431','11','21'),
-        );
-       $excelOption->createExcel($body_arr,'test.xls');
+		if($step==2){
+			$excelOption= new \Org\Util\ExcelOption();
+			$exts = strtolower(substr($_FILES['product_file']['name'], strrpos($_FILES['product_file']['name'], '.')+1));
+			$excelData = $excelOption->readExcel($_FILES['product_file']['tmp_name'],$exts);
+			$headeLine = array_shift($excelData);
+			$tableFileField = S("tableFileField");
+
+			// 取得导入行对应的字段
+			$tableField = array();
+			foreach($headeLine as $val){
+				foreach($tableFileField as $k=>$v){
+					if($val==$v){
+						$tableField[] = $k;
+					}
+				}
+			}
+
+			//简单的判断
+			if(!in_array("product_code",$tableField)){
+            	$this->error("不存在SKU列");
+	        }
+	        if(count($tableField)<2){
+	            $this->error("数据少于2列");
+	        }
+
+	        $productData =$attrData = array();
+	        foreach($excelData as $data){
+	        	if(empty($data) || empty($data[0])) continue;
+	        	foreach($tableField as $key=>$field){
+	        		$temp = trim($data[$key]);
+	                if($field == 'product_code'){ //检查SKU
+	                    $temp = str_replace("\n","",str_replace("\n\r","\n",$temp));
+	                    if(!preg_match('#^[a-zA-Z]+\d*\w*$#i',$temp)){
+	                        $this->error("SKU：".$temp." 有误(必须是字母加数字形式)");
+	                    }
+	                }
+	                if($field=='product_color' || $field=='product_size'){
+	                	$temp = preg_replace('/&nbsp;/i',' ',$temp);
+	                	$temp = preg_split("/[\s,]+/",$temp);
+	                	$temp_data[$field] = $temp;
+	                }else{
+	                	$temp_data[$field] = $temp;   
+	                }
+	        	}
+	        	$productData[] = $temp_data;
+	        }
+	        
+	        //插入数据
+	        $pModel  = M('Product');
+	        $iqModel = M('Image_queue');
+	        foreach($productData as $key=>$val){
+	        	$color = $val['product_color'];
+	        	$size  = $val['product_size'];
+				unset($val['product_color'],$val['product_size']);
+				$product_id = $pModel->where("product_code='".$val['product_code']."'")->getField('product_id');
+				if(empty($product_id)){// 插入
+					$date_time = date('Y-m-d H:i:s');
+					$val['create_time'] = $date_time;
+					$product_id = $pModel->add($val);	        	
+		        	//插入图片队列表image_queue
+		        	$iqModel->add(array('product_code'=>$val['product_code'],'add_time'=>$date_time));
+				}else{// 更新
+					$pModel->where("product_id='".$product_id."'")->save($val); //更新操作
+					$pModel->where("product_id=".$product_id." AND option_id=".C('Default_COLOR_Option'))->delete();
+					$pModel->where("product_id=".$product_id." AND option_id=".C('Default_SIZE_Option'))->delete();
+				}
+				//插入更新属性
+				if($color){
+	        		$this->batchHandleAttr($product_id,C('Default_COLOR_Option'),$color);
+	        	}
+	        	if($size){
+	        		$this->batchHandleAttr($product_id,C('Default_SIZE_Option'),$size);
+	        	}	
+	        }
+	        $this->success('上传成功！',U('Product/index'));
+		}
+		$this->assign('step',$step);
+		$this->display();
+	}
+
+	/**
+	 * @param integer $product_id 
+	 * @param integer $option_id
+	 * @param array $value_arr 属性值名称数组 array('red','white')
+	 */
+	private function batchHandleAttr($product_id,$option_id,$value_arr){
+		$paModel  = M('Product_attribute');
+		$valueStr = "'".implode("','", $value_arr)."'";
+		$sql = "SELECT av.value_id FROM attribute_value av LEFT JOIN attribute a 
+				ON av.value_id=a.value_id 
+				WHERE av.value_name IN(".$valueStr.") AND a.option_id='".$option_id."'";
+		$valueArr = $paModel->query($sql);
+		foreach($valueArr as $v){
+			$v['option_id']  = $option_id;
+			$v['product_id'] = $product_id;
+			$paModel->add($v);
+		}
 	}
 }

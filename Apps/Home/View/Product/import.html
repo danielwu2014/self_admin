@@ -1,0 +1,38 @@
+<include file="Public:main_top" />
+<if condition="$step eq 1">
+<fieldset>
+  <legend>上传产品</legend>
+  <form enctype="multipart/form-data" action="{:U('Product/import',array('step'=>2))}" method="POST">
+    <table cellspacing="1" cellpadding="2" border="0" style="width:100%">
+	  <tr height="30">
+	    <td width="9%" align="right">上传产品文件:</td>
+	    <td>
+	      <input type="file" name="product_file">
+	      <span style="color:red">上传文件的类型：xls,xlsx</span>
+	    </td>
+	  </tr>
+	  <tr height="50">
+	    <td width="9%" align="right"></td>
+	    <td>
+	      <input type="submit" class="button" value="保存">
+	      <input type="reset" class="button" value="重置">
+	    </td>
+	  </tr>
+	</table>
+</form>
+</fieldset>
+<elseif condition="$step eq 2"/>
+
+	<table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#464646" class="newfont03">
+	  <tr>
+
+	  </tr>
+	  <foreach name="voList" item="vo" >
+	  <tr>
+	   
+	  </tr>
+	</foreach>
+	</table>
+
+</if>
+<include file="Public:main_bottom" /> 

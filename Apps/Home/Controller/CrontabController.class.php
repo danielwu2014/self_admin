@@ -13,12 +13,12 @@ class CrontabController extends Controller {
 	 * 
 	 */
 	public function batchCropImage(){
+		set_time_limit(0);
 		$temp = M('image_queue')->field('product_code')->order('add_time,modify_time')->select();
 		foreach($temp as $val){
 			$image_queue[$val['product_code']] = str_replace('/',DIRECTORY_SEPARATOR,C('IMAGE_DIR')).$val['product_code'].DIRECTORY_SEPARATOR;
 		}
 		if(empty($image_queue)) exit('no image data to crap');
-
 
 		$image_crop_param = C('IMAGE_CROP_PARAM');
 		foreach($image_queue as $product_code=>$tmp_path){

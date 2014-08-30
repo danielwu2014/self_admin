@@ -108,6 +108,7 @@ function get_dir_file($dirname,$exclude=''){
     if(false==$handler) return ;
     $file_arr = array();
     while(false!==($file=readdir($handler))){
+        if(preg_match('/\.db$/', $file)) continue;//windows缩略图db文件
         if($file != "." && $file != ".."){
             $filepath = $dirname.DIRECTORY_SEPARATOR.$file;
             if($exclude && function_exists($exclude) && !$exclude($filepath))
